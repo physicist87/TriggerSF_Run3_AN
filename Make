@@ -1,0 +1,16 @@
+#
+# MAKEFILE FOR PAPER AN-26-XXX
+#
+
+.DEFAULT: all
+
+#PAPER
+all: pdf
+
+pdf: 
+	mkdir -p output
+	eval 'utils/tdr runtime'
+	./utils/tdr --style=an --temp_dir=output b AN-26-XXX
+	cp output/AN-26-XXX_temp.pdf .
+
+

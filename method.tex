@@ -1,0 +1,15 @@
+\section{Trigger efficiency and scale-factor measurement}\label{sec:method}
+\subsection{Trigger efficiency}\label{sec:eff}
+Let $O$ be the offline selection, $R$ the reference-trigger OR, and $S_c$ the signal-trigger OR for channel $c$. In bin $i$ of observable $x$, the measured conditional efficiency is
+\begin{equation}\label{eq:eff}
+\hat\epsilon_{d/m,c,i}(x)=\frac{N_{d/m,c,i}(O\cap R\cap S_c)}{N_{d/m,c,i}(O\cap R)},
+\end{equation}
+where $d$ and $m$ denote data and simulation. For simulation, $N$ is the sum of the configured non-trigger analysis weights. The desired inclusive offline efficiency $P(S_c\mid O)$ coincides with this conditional efficiency only when the reference-trigger selection is sufficiently independent of the signal-trigger response within the selected region; Section~\ref{sec:corr} tests this condition. Results in the plateau and turn-on region must be shown separately where useful.
+\begin{figure}[htbp]\centering\plotplaceholder{Data and MC efficiencies versus leading/subleading lepton $p_{\mathrm T}$; representative period and each channel.}\caption{Representative one-dimensional signal-trigger efficiencies measured with the MET reference. The final data and MC curves, numerator/denominator definitions and uncertainty bars are to be inserted.}\label{fig:eff-example}\end{figure}
+\subsection{Data-to-simulation scale factors}\label{sec:sf}
+The trigger correction in bin $i$ is
+\begin{equation}\label{eq:sf}
+\mathrm{SF}_{c,i}=\frac{\hat\epsilon_{d,c,i}}{\hat\epsilon_{m,c,i}}.
+\end{equation}
+No scale factor is defined where the denominator is zero or statistically unusable. The nominal deliverable is a two-dimensional map in the leading and subleading lepton transverse momenta, with separate maps per measurement period and channel. Leptons are ordered by $p_{\mathrm T}$ for all three channels; if the implementation instead orders the $e\mu$ pair by flavour this must be corrected consistently in the text, axes, and lookup code. Bin edges, under/overflow treatment and whether the final measurement uses yearly or finer era maps remain to be fixed from actual statistics.
+\begin{figure}[htbp]\centering\plotplaceholder{Representative one-dimensional $\epsilon_{\rm data}/\epsilon_{\rm MC}$ versus lepton $p_{\mathrm T}$ and $\eta$.}\caption{Representative one-dimensional trigger scale factors. Final curves and uncertainty bands are to be inserted. All final maps are presented in Section~\ref{sec:results}.}\label{fig:sf-example}\end{figure}

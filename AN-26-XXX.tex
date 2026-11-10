@@ -1,0 +1,163 @@
+% Run 3 dilepton trigger efficiency and scale factor AN
+% Skeleton based on the structure/style of the CPV AN.
+
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+\newcommand{\physrev}   {Phys. Rev.\xspace}
+\newcommand{\npion}   {$\pi ^{0}$}
+%\newcommand{\ttbar}     {$t\overline{t}$\xspace}
+\newcommand{\dilepton}  {$t\overline{t}_{dilepton}$\xspace}
+%\newcommand{\bbbar}     {\mbox{$b\bar{b}$}\xspace}
+%\newcommand{\ccbar}     {\mbox{$c\bar{c}$}\xspace}
+\newcommand{\ppbar}     {\mbox{$p\bar{p}$}\xspace}
+\newcommand{\herwig}    {\sc{herwig}}
+\newcommand{\pythia}    {\sc{pythia}}
+\newcommand{\vecbos}    {\sc{vecbos}}
+\newcommand{\alpgen}    {\sc{alpgen}}
+\newcommand{\qq}        {\sc{qq}}
+\newcommand{\evtgen}    {\sc{evtgen}}
+\newcommand{\tauola}    {\sc{tauola}}
+\newcommand{\geant}     {\sc{geant}}
+\newcommand{\met}       {\mbox{$\not\!\!E_T$}\xspace}
+\newcommand{\metcal}    {\mbox{$\not\!\!E_{Tcal}$}\xspace}
+\newcommand{\rar}       {\rightarrow}
+\newcommand{\eps}       {\epsilon}
+\newcommand{\wplus}     {$W+$jets\xspace}
+\newcommand{\zplus}     {$Z+$jets\xspace}
+\newcommand{\wplusfour} {$W+$4jets\xspace}
+\newcommand{\qcdplus}   {QCD-multijets\xspace} 
+\newcommand{\kapa}      {MC-to-data correction factor\xspace}
+\newcommand{\kapas}     {MC-to-data correction factors\xspace}
+\newcommand{\Ztautau}   {$Z\to\tau\tau$\xspace}
+\newcommand{\Zmumu}     {$Z\to\mu\mu$\xspace}
+\newcommand{\Zee}       {$Z\to ee$\xspace}
+\newcommand{\lowmet}    {low-\mbox{$\not\!\!E_T$}-QCD\xspace}
+\newcommand{\muplus}    {$\mu+$jets\xspace}
+\newcommand{\eplus}     {$e+$jets\xspace}
+\newcommand{\lplus}     {lepton+jets\xspace}
+%\newcommand{\MET}       {$\not\!\!E_T$}
+\newcommand{\wrt}       {with respect to\xspace}
+\newcommand{\lminust}   {{\bf L-T} \xspace}
+%\newcommand{\pt}        {\mbox{$p_{\rm T}$}}
+\newcommand{\comphep}   {\sc{c}\rm{omp}\sc{hep}}
+\newcommand{\singletop} {\sc{s}\rm{ingle}\sc{t}\rm{op}}
+\newcommand{\wetc}      {$W$\bbbar+$W$\ccbar+$Wjj$ \xspace}
+\newcommand{\ee} {$e^+e^-$}
+\newcommand{\mumu} {$\mu^{+}\mu^{-}$}
+\newcommand{\emu} {$e^{\pm}\mu^{\mp}$}
+\newcommand{\bjet} {$b$-quark jet}
+\newcommand{\bjets} {$b$-quark jets}
+\newcommand{\oone} {$\mathcal{O}_{1}$}
+\newcommand{\othree} {$\mathcal{O}_{3}$}
+\newcommand{\mex} {\ensuremath{E\!\!\!\!/_\text{x}}}
+\newcommand{\mey} {\ensuremath{E\!\!\!\!/_\text{y}}}
+\newcommand{\px}{\ensuremath{p_\text{x}}{}}
+\newcommand{\py}{\ensuremath{p_\text{y}}{}}
+\newcommand{\pz}{\ensuremath{p_\text{z}}{}}
+
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+
+% --- Observables and Asymmetries (New definitions) ---
+\providecommand{\ObsOne}{\ensuremath{\mathcal{O}_{1}}\xspace}
+\providecommand{\ObsThree}{\ensuremath{\mathcal{O}_{3}}\xspace}
+\providecommand{\ObsInd}{\ensuremath{\mathcal{O}_{i}}\xspace}
+\providecommand{\AsymI}{\ensuremath{\text{A}_{\mathcal{O}_{i}}}\xspace}
+\providecommand{\AsymOne}{\ensuremath{\text{A}_{\mathcal{O}_{1}}}\xspace}
+\providecommand{\AsymThree}{\ensuremath{\text{A}_{\mathcal{O}_{3}}}\xspace}
+
+% --- CEDM and Lagrangian Parameters ---
+\providecommand{\dtG}{\ensuremath{d_{\PQt G}}\xspace}
+\providecommand{\ImdtG}{\ensuremath{\text{Im}(\dtG)}\xspace}
+\providecommand{\Lag}{\ensuremath{\mathcal{L}}\xspace}
+\providecommand{\gS}{\ensuremath{g_{\mathrm{S}}}\xspace}
+\providecommand{\GMM}{\ensuremath{T^a}\xspace}
+\providecommand{\FST}{\ensuremath{G_{\mu\nu}}\xspace}
+\providecommand{\CMDM}{\ensuremath{a^{\Pg}_{\PQt}}\xspace}
+
+% --- Particles and Kinematics (Using providecommand to avoid conflicts) ---
+\providecommand{\PQt}{\text{t}\xspace}
+\providecommand{\PAQt}{\bar{\text{t}}\xspace}
+\providecommand{\PQb}{\text{b}\xspace}
+\providecommand{\PAQb}{\bar{\text{b}}\xspace}
+\providecommand{\Pellp}{\ell^{+}\xspace}
+\providecommand{\Pellm}{\ell^{-}\xspace}
+\providecommand{\Pellpm}{\ell^{\pm}\xspace}
+
+\providecommand{\momt}{\ensuremath{p_{\PQt}}\xspace}
+\providecommand{\momat}{\ensuremath{p_{\PAQt}}\xspace}
+\providecommand{\momb}{\ensuremath{p_{\PQb}}\xspace}
+\providecommand{\momab}{\ensuremath{p_{\PAQb}}\xspace}
+\providecommand{\momlp}{\ensuremath{p_{\Pellp}}\xspace}
+\providecommand{\momlm}{\ensuremath{p_{\Pellm}}\xspace}
+
+% --- Units and Symbols ---
+\providecommand{\TeV}{\,\text{TeV}\xspace}
+\providecommand{\fbinv}{\,\text{fb}^{-1}\xspace}
+\providecommand{\trigSF}{\ensuremath{\mathrm{SF}_{\mathrm{trig}}}\xspace}
+
+
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+
+
+% Visible placeholders for analysis inputs and results still in progress.
+\newcommand{\todo}[1]{\textbf{[TO VERIFY: #1]}}
+\newcommand{\insertitem}[1]{\textbf{[TO INSERT: #1]}}
+\newcommand{\plotplaceholder}[1]{\fbox{\begin{minipage}[c][3.2cm][c]{0.83\linewidth}\centering\small\textbf{Result plot pending}\\#1\end{minipage}}}
+
+%%%%%%%%%%%%%%% Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-26-XXX}
+\title{Measurement of dilepton trigger efficiencies and scale factors with the Run 3 dataset}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%To mark authors as primary, use the \author* form
+\address[inst1]{Korea University (KR)}
+\author[inst1]{Haeyun Hwang}
+\author[inst1]{Seungkyu Ha}
+\author[inst1]{Jae Hyeok Yoo}
+\address[inst2]{Kyungpook National University}
+\author[inst2]{Sehwook Lee}
+\author[inst2]{Junghyun Lee}
+\author[inst2]{Gyeongmo Kim}
+\address[inst3]{Yonsei University}
+\author[inst3]{Guk Cho}
+\author[inst3]{Dongwoon Kim}
+\author[inst3]{Hwi Dong Yoo}
+
+
+% Add collaborators as needed.
+
+\date{\today}
+
+\abstract{
+The trigger efficiencies and corresponding data-to-simulation scale factors are to be measured for events containing two oppositely charged leptons using proton--proton collision data collected by the CMS experiment during Run 3 at a center-of-mass energy of $13.6~\TeV$. The measurement is performed separately in the $ee$, $e\mu$, and $\mu\mu$ final states. The measurement is motivated by the Run 3 extension of the $\ttbar$ CP violation analysis in the dilepton channel and can also be used by other top quark analyses with similar final states. The trigger efficiencies are measured using an independent set of missing transverse momentum triggers. The scale factors are to be obtained from the ratio of the efficiencies measured in data and simulation, and their dependence on lepton kinematic properties, pileup, and event topology is investigated.
+}
+
+\hypersetup{
+  pdfauthor={Seungkyu Ha, Dongwoon Kim, Haeyun Hwang, Jae Hyeok Yoo, Sehwook Lee, Junghyun Lee, Gyeongmo Kim, Guk Cho, Hwi Dong Yoo},
+  pdftitle={Measurement of dilepton trigger efficiencies and scale factors with the Run 3 dataset},
+  pdfsubject={CMS Analysis Note},
+  pdfkeywords={CMS, top quark, ttbar, dilepton, trigger, efficiency, scale factor, Run 3}
+}
+
+\maketitle
+\tableofcontents
+
+%% body
+\input{introduction}
+\input{datamc}
+\input{triggers}
+\input{object_event_selection}
+\input{method}
+\input{systematics}
+\input{results}
+\input{validation}
+\input{summary}
+
+\clearpage
+\newpage
+\bibliography{auto_generated}
+
+\clearpage
+\appendix
+\input{appendix}

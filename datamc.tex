@@ -1,0 +1,7 @@
+\section{Data and simulated samples}\label{sec:data}
+\subsection{Data samples}\label{sec:data-samples}
+The reference-trigger data are drawn from the Run 3 MET/JetMET primary datasets listed in Table~\ref{tab:data}. Entries are transcribed from slide 4 of Ref.~\cite{purdue}. The slide uses abbreviated dataset strings (for example, \texttt{/JetMET/Run2022D-22Sep2023-v1/NANOAOD}); these are \emph{not} validated full DAS dataset paths. Their processing names and completeness must be checked against the actual analysis input lists. The quoted integrated luminosities and run ranges are the slide values, not new recalculations; totals should be recomputed from the certified-luminosity mask and analysis run selection. Multiple JetMET0/JetMET1 records in one run interval do not imply that the luminosity is added more than once.
+\input{tables/datasets}
+\subsection{Simulated samples}\label{sec:mc-samples}
+Dileptonic $t\bar t$ simulation is used to measure the denominator and numerator with the same trigger logic and offline event selection as in data. Table~\ref{tab:mc} reproduces the seven 2022--2024 sample identifiers legible on slide 5 of Ref.~\cite{purdue}; a leading slash is added only for readability. Their DAS existence and actual production configurations still require verification. No 2025 simulated sample is shown on that slide, so none is inferred here. Simulation is normalized and corrected using the prescriptions adopted by the CPV analysis; those corrections are documented separately from the trigger-efficiency ratio.
+\input{tables/mc_samples}

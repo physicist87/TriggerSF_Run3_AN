@@ -1,0 +1,28 @@
+\section{Object and event selection}\label{sec:selection}
+The selection follows the earlier Run 3 trigger-AN draft~\cite{earlier}, adapted to the nominal CPV analysis choices of a medium UParT $b$-tagging working point and a run-dependent Jet Veto Map. The same offline selection is applied to data and simulation where applicable. Table~\ref{tab:sel} summarizes the numerical cuts specified in that draft. Identification working points, year-dependent calibrations and trigger-study input code require a final cross-check before this selection is presented as the implemented measurement.
+\subsection{Electron selection}\label{sec:electron}
+Electrons have $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta|<2.4$. Those in the ECAL barrel--endcap transition region are excluded. The nominal electron identification, isolation, momentum calibration and overlap-removal criteria follow the CPV reconstruction. \todo{Specify the exact ECAL gap, identification and isolation working points, impact-parameter cuts, correction versions and period dependence from the Run 3 code.}
+\subsection{Muon selection}\label{sec:muon}
+Muons have $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta|<2.4$ and pass the nominal CPV identification and isolation. Momentum corrections and overlap removal are applied consistently to data and simulation. \todo{Specify exact ID, isolation and impact-parameter criteria and correction version.}
+\subsection{Jet selection}\label{sec:jet}
+Jets are clustered with the anti-$k_{\mathrm T}$ algorithm with radius $R=0.4$ from PUPPI-weighted particle-flow candidates. Selected jets satisfy $p_{\mathrm T}>30~\mathrm{GeV}$, $|\eta|<2.4$, the recommended jet ID, and lepton cleaning. Run-dependent JEC and JER treatments are applied. The recommended period-specific Jet Veto Map is applied according to its prescription in data and simulation. \todo{Confirm jet ID, cleaning radius, JEC/JER versions, veto-map identifiers and event-versus-jet veto logic.}
+\subsection{$b$ jet identification}\label{sec:btag}
+At least one selected jet must pass the \emph{medium} Unified Particle Transformer (UParT) $b$-tagging working point. This is distinct from alternative medium \emph{object selections} in Appendix~\ref{app:alternatives}. \todo{Insert per-period UParT branch and thresholds, calibration, and availability in each NanoAOD campaign.}
+\subsection{Missing transverse momentum}\label{sec:met}
+PUPPI missing transverse momentum is used. The earlier Run 3 draft~\cite{earlier} imposes $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$, on both efficiency numerator and denominator. The recommended event filters and propagated object corrections are applied. \todo{Confirm the 100~GeV cut, PUPPI MET branch, filter list, and consistency with the final CPV selection and reference-trigger plateau.}
+\subsection{Event selection}\label{sec:events}
+Events contain at least two oppositely charged selected leptons in an exclusive $ee$, $e\mu$, or $\mu\mu$ channel. The leading and subleading leptons satisfy $p_{\mathrm T}>25$ and $15~\mathrm{GeV}$, respectively, and $m_{\ell\ell}>20~\mathrm{GeV}$. At least one selected jet passes medium UParT, and $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$ is required. Recommended quality filters and the Jet Veto Map are applied. The earlier draft does not establish an exact-two-lepton veto, a minimum total jet multiplicity, or a same-flavour $Z$ veto; add these only if implemented in the Run 3 trigger study.
+\begin{table}[htbp]\centering\small
+\caption{Draft nominal offline selection from the earlier trigger AN~\cite{earlier} and the agreed UParT-medium and Jet Veto Map choices. Exact working points require code verification.}\label{tab:sel}
+\begin{tabular}{p{0.32\linewidth}p{0.58\linewidth}}\hline
+Object or quantity & Requirement \\\hline
+Electrons & $p_{\mathrm T}>15~\mathrm{GeV}$, $|\eta|<2.4$; ECAL transition veto; CPV ID and isolation.\\
+Muons & $p_{\mathrm T}>15~\mathrm{GeV}$, $|\eta|<2.4$; CPV ID and isolation.\\
+AK4 PUPPI jets & $p_{\mathrm T}>30~\mathrm{GeV}$, $|\eta|<2.4$; jet ID and lepton cleaning.\\
+Jet Veto Map & Recommended period-specific map applied.\\
+Dilepton topology & $\geq2$ opposite-charge leptons in $ee$, $e\mu$, $\mu\mu$; leading (subleading) $p_{\mathrm T}>25$ ($15$) GeV; $m_{\ell\ell}>20~\mathrm{GeV}$.\\
+$b$-tagged jets & $\geq1$ selected jet at UParT medium working point.\\
+PUPPI missing momentum & $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$.\\
+Event quality & Period-specific filters and certified data lumisections.\\\hline
+\end{tabular}\end{table}
+For the efficiency measurement, the MET-reference trigger is imposed on numerator and denominator; the signal trigger is imposed only on the numerator. \todo{Check the table against final code and document year- or channel-dependent deviations.}

@@ -1,0 +1,17 @@
+\section{Trigger paths}\label{sec:triggers}
+For each final state, the signal-trigger decision is the logical OR of the applicable single-lepton and dilepton paths. Table~\ref{tab:signal} lists the Run 3 paths shown on slides 6--8 of Ref.~\cite{purdue}; every path must be checked against the HLT menu and NanoAOD branches in each period. A recorded event may pass several paths but enters each numerator once. Any run-dependent changes, prescales, dataset-overlap removal, or trigger-object matching requirements must be documented before finalization.
+\begin{table}[htbp]\centering\small
+\caption{Signal-trigger OR as listed in the Purdue Run 3 study. Path suffixes \texttt{\_v*} are suppressed. Confirm per-era availability and signal dataset overlap removal.}\label{tab:signal}
+\begin{tabular}{p{1.2cm}p{0.78\linewidth}}\hline Channel & Signal HLT paths \\\hline
+$ee$ & \path{HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Ele32_WPTight_Gsf}; \path{HLT_DoubleEle25_CaloIdL_MW} \\
+$e\mu$ & \path{HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ}; \path{HLT_Ele32_WPTight_Gsf}; \path{HLT_IsoMu24} \\
+$\mu\mu$ & \path{HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8}; \path{HLT_IsoMu24} \\\hline\end{tabular}
+\end{table}
+\subsection{MET reference triggers}\label{sec:reference}
+Events for the efficiency denominator are recorded with a logical OR of MET or MET+HT reference paths. These triggers select events without directly requiring an electron or muon. The reference set transcribed from slide 9 of Ref.~\cite{purdue} is given in Table~\ref{tab:met}. The unprescaled status and validity interval of each path, and its actual NanoAOD implementation, must be verified. The MET requirement of the reference trigger can bias the measured efficiency if it is correlated with the dilepton trigger; this assumption is examined in Section~\ref{sec:corr}.
+\begin{table}[htbp]\centering\small
+\caption{Candidate MET-reference paths listed for all 2022--2025 periods in Ref.~\cite{purdue}. Preserve only paths verified in each run and in the input files.}\label{tab:met}
+\begin{tabular}{p{0.94\linewidth}}\hline
+\path{HLT_PFMET120_PFMHT120_IDTight_PFHT60}; \path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60}; \path{HLT_PFHT500_PFMET100_PFMHT100_IDTight}; \path{HLT_PFHT700_PFMET85_PFMHT85_IDTight}; \path{HLT_PFHT800_PFMET75_PFMHT75_IDTight}; \path{HLT_PFMETTypeOne200_BeamHaloCleaned}; \path{HLT_PFMET200_BeamHaloCleaned}; \path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_FilterHF}; \path{HLT_PFHT500_PFMET110_PFMHT110_IDTight} \\\hline\end{tabular}
+\end{table}
+The 2022-only additions displayed on that slide are \path{HLT_PFMETTypeOne120_PFMHT120_IDTight_PFHT60}, \path{HLT_PFMETTypeOne120_PFMHT120_IDTight}, and \path{HLT_PFMETNoMu100_PFMHTNoMu100_IDTight_PFHT60}. \todo{Verify each string, including \texttt{NoMu}, PFHT thresholds and year dependence, against the production code.}
