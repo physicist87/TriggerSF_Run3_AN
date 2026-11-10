@@ -1,7 +1,8 @@
-\section{Data and simulated samples}\label{sec:data}
-\subsection{Data samples}\label{sec:data-samples}
-The reference-trigger data are drawn from the Run 3 MET/JetMET primary datasets listed in Table~\ref{tab:data}. Entries are transcribed from slide 4 of Ref.~\cite{purdue}. The slide uses abbreviated dataset strings (for example, \texttt{/JetMET/Run2022D-22Sep2023-v1/NANOAOD}); these are \emph{not} validated full DAS dataset paths. Their processing names and completeness must be checked against the actual analysis input lists. The quoted integrated luminosities and run ranges are the slide values, not new recalculations; totals should be recomputed from the certified-luminosity mask and analysis run selection. Multiple JetMET0/JetMET1 records in one run interval do not imply that the luminosity is added more than once.
-\input{tables/datasets}
-\subsection{Simulated samples}\label{sec:mc-samples}
-Dileptonic $t\bar t$ simulation is used to measure the denominator and numerator with the same trigger logic and offline event selection as in data. Table~\ref{tab:mc} reproduces the seven 2022--2024 sample identifiers legible on slide 5 of Ref.~\cite{purdue}; a leading slash is added only for readability. Their DAS existence and actual production configurations still require verification. No 2025 simulated sample is shown on that slide, so none is inferred here. Simulation is normalized and corrected using the prescriptions adopted by the CPV analysis; those corrections are documented separately from the trigger-efficiency ratio.
-\input{tables/mc_samples}
+\section{Data and simulation}\label{sec:data}
+The measurement uses separate 2024 and 2025 datasets at $\sqrt{s}=13.6$~TeV.
+The supplied one-dimensional plots are labelled with integrated luminosities of $109.82~\mathrm{fb}^{-1}$ for 2024 and $110.37~\mathrm{fb}^{-1}$ for 2025.
+These values are retained as the measurement figure metadata; they are not replaced by luminosities quoted for different analysis selections or input versions.
+The reference data are collected with MET/JetMET triggers, and dileptonic $t\bar t$ simulation provides the simulated reference.
+The two years are kept separate in the result figures and correction lookup.
+The supplied files \texttt{TriggerSF\_2024.root} and \texttt{TriggerSF\_2025.root} are distributed unchanged.
+\todo{Confirm the actual data and MC input lists, campaign, certified run intervals, luminosity calculation, and dataset-overlap removal for each year.}

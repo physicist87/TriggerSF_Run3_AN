@@ -1,7 +1,11 @@
-Run 3 dilepton Trigger SF AN integrated draft
+# Run 3 dilepton trigger AN
 
-Compile from this directory using: make -f Make
+Build with `make -f Make` (CMS tdr utilities and TeX required).
 
-The section files retain the CMS TDR template and author list. tables/datasets.tex and tables/mc_samples.tex transcribe Purdue slide 4--5 identifiers; data strings are abbreviated and 2025 MC is absent in that source. Object selection numbers come from the earlier AN-26-XXX draft with UParT medium and Jet Veto Map. TO VERIFY and TO INSERT mark outstanding code-level details and actual plots.
+The package includes the complete LaTeX draft, CMS template utilities, 226 selected vector-PDF plots (113 per year), both original ROOT correction files, and the latest compiled PDF.
 
-recommendations.tex is retained for provenance but no longer included because the Results section carries the complete SF and uncertainty maps. AN-26-XXX.tex.bk is retained unchanged.
+Results, uncertainty breakdowns, and appendix diagnostics are separated into 2024 and 2025. Original plot luminosities are 109.82/fb and 110.37/fb, respectively. Figures are under figures/2024 and figures/2025.
+
+The JSON manifests record source-to-package mappings; they are optional and are not used for compilation. FIGURE_COVERAGE.md records the selection scope. No new SF values or uncertainties were computed.
+
+The independent application-validation study is pending and is retained in validation.tex without being included in the compiled note. Remaining scientific checks are marked explicitly in the draft, including actual datasets/certification, statistical interval construction, correlation-uncertainty combination, and ROOT lookup/error semantics.

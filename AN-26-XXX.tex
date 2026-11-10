@@ -130,7 +130,7 @@
 \date{\today}
 
 \abstract{
-The trigger efficiencies and corresponding data-to-simulation scale factors are to be measured for events containing two oppositely charged leptons using proton--proton collision data collected by the CMS experiment during Run 3 at a center-of-mass energy of $13.6~\TeV$. The measurement is performed separately in the $ee$, $e\mu$, and $\mu\mu$ final states. The measurement is motivated by the Run 3 extension of the $\ttbar$ CP violation analysis in the dilepton channel and can also be used by other top quark analyses with similar final states. The trigger efficiencies are measured using an independent set of missing transverse momentum triggers. The scale factors are to be obtained from the ratio of the efficiencies measured in data and simulation, and their dependence on lepton kinematic properties, pileup, and event topology is investigated.
+Dilepton trigger efficiencies and data-to-simulation scale factors are studied in the $ee$, $e\mu$, and $\mu\mu$ channels using Run 3 proton--proton collision data at $\sqrt{s}=13.6$ TeV. The present draft includes the available 2024 and 2025 results; results for other Run 3 years will be added as they become available. The 2024 and 2025 results are labelled with integrated luminosities of $109.82$ and $110.37~\mathrm{fb}^{-1}$, respectively. An independent MET-reference trigger selection defines the efficiency denominator. This note presents one-dimensional efficiency comparisons, two-dimensional scale-factor maps, and studies of statistical precision, trigger correlation, event topology, pileup, and data-taking periods. The correction axes are the leading and subleading lepton transverse momenta for same-flavour channels, and electron and muon transverse momenta for the mixed-flavour channel. This is a working draft: the exact production configuration and uncertainty prescription require verification before release.
 }
 
 \hypersetup{
@@ -140,6 +140,7 @@ The trigger efficiencies and corresponding data-to-simulation scale factors are 
   pdfkeywords={CMS, top quark, ttbar, dilepton, trigger, efficiency, scale factor, Run 3}
 }
 
+\emergencystretch=2em
 \maketitle
 \tableofcontents
 
@@ -150,13 +151,18 @@ The trigger efficiencies and corresponding data-to-simulation scale factors are 
 \input{object_event_selection}
 \input{method}
 \input{systematics}
+\clearpage
 \input{results}
-\input{validation}
+\clearpage
 \input{summary}
 
 \clearpage
 \newpage
-\bibliography{auto_generated}
+\begin{thebibliography}{9}
+\bibitem{run2} S. Chenarani et al., ``Measurement of the trigger efficiencies for a dilepton selection for a ttbar analysis with the full Run 2 dataset'', CMS-AN-2019-140 (2022), internal analysis note.
+\bibitem{purdue} A. Arisi, ``Trigger efficiencies and scale factors measurements with the Run 3 dataset for a dilepton selection'', internal study slides (2026); metadata inherited from the supplied draft.
+\bibitem{earlier} CPV trigger working group, ``Measurement of dilepton trigger efficiencies and scale factors with the Run 3 dataset'', AN-26-XXX working draft, September 2026.
+\end{thebibliography}
 
 \clearpage
 \appendix

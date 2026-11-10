@@ -1,0 +1,267 @@
+[
+  {
+    "source": "ElEl/TrigEffData/TrigEff_Lep1pt.pdf",
+    "packaged": "figures/2024/ElEl/TrigEffData/TrigEff_Lep1pt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "ElEl/TrigEffData/TrigEff_Lep2pt.pdf",
+    "packaged": "figures/2024/ElEl/TrigEffData/TrigEff_Lep2pt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "ElEl/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "packaged": "figures/2024/ElEl/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "ElEl/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "packaged": "figures/2024/ElEl/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Lep1pt.pdf",
+    "packaged": "figures/2024/ElEl/Statistical_Uncertainty/UncRatio_Lep1pt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Lep2pt.pdf",
+    "packaged": "figures/2024/ElEl/Statistical_Uncertainty/UncRatio_Lep2pt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "packaged": "figures/2024/ElEl/Statistical_Uncertainty/UncRatio_Num_Jets.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "packaged": "figures/2024/ElEl/Statistical_Uncertainty/UncRatio_Num_PV.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "packaged": "figures/2024/ElEl/Uncertainty_Breakdown/Breakdown_Lep1pt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "packaged": "figures/2024/ElEl/Uncertainty_Breakdown/Breakdown_Lep2pt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/ElEl/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/ElEl/Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "packaged": "figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "packaged": "figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "ElEl/ScaleFactor/SF_Num_bJets.pdf",
+    "packaged": "figures/2024/ElEl/ScaleFactor/SF_Num_bJets.pdf",
+    "reason": "Efficiency comparison and scale factor versus heavy-flavour activity"
+  },
+  {
+    "source": "MuEl/TrigEffData/TrigEff_ElPt.pdf",
+    "packaged": "figures/2024/MuEl/TrigEffData/TrigEff_ElPt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuEl/TrigEffData/TrigEff_MuPt.pdf",
+    "packaged": "figures/2024/MuEl/TrigEffData/TrigEff_MuPt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuEl/TrigEffMC/TrigEff_ElPt.pdf",
+    "packaged": "figures/2024/MuEl/TrigEffMC/TrigEff_ElPt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuEl/TrigEffMC/TrigEff_MuPt.pdf",
+    "packaged": "figures/2024/MuEl/TrigEffMC/TrigEff_MuPt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuEl/Statistical Uncertainty/UncRatio_ElPt.pdf",
+    "packaged": "figures/2024/MuEl/Statistical_Uncertainty/UncRatio_ElPt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuEl/Statistical Uncertainty/UncRatio_MuPt.pdf",
+    "packaged": "figures/2024/MuEl/Statistical_Uncertainty/UncRatio_MuPt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuEl/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "packaged": "figures/2024/MuEl/Statistical_Uncertainty/UncRatio_Num_Jets.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuEl/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "packaged": "figures/2024/MuEl/Statistical_Uncertainty/UncRatio_Num_PV.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_ElPt.pdf",
+    "packaged": "figures/2024/MuEl/Uncertainty_Breakdown/Breakdown_ElPt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_MuPt.pdf",
+    "packaged": "figures/2024/MuEl/Uncertainty_Breakdown/Breakdown_MuPt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/MuEl/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/MuEl/Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "packaged": "figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "packaged": "figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "MuEl/ScaleFactor/SF_Num_bJets.pdf",
+    "packaged": "figures/2024/MuEl/ScaleFactor/SF_Num_bJets.pdf",
+    "reason": "Efficiency comparison and scale factor versus heavy-flavour activity"
+  },
+  {
+    "source": "MuEl/ScaleFactor/SF_ElPt.pdf",
+    "packaged": "figures/2024/MuEl/ScaleFactor/SF_ElPt.pdf",
+    "reason": "Efficiency comparison and scale factor in the flavour-specific momentum variables used by the two-dimensional correction"
+  },
+  {
+    "source": "MuEl/ScaleFactor/SF_MuPt.pdf",
+    "packaged": "figures/2024/MuEl/ScaleFactor/SF_MuPt.pdf",
+    "reason": "Efficiency comparison and scale factor in the flavour-specific momentum variables used by the two-dimensional correction"
+  },
+  {
+    "source": "MuMu/TrigEffData/TrigEff_Lep1pt.pdf",
+    "packaged": "figures/2024/MuMu/TrigEffData/TrigEff_Lep1pt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuMu/TrigEffData/TrigEff_Lep2pt.pdf",
+    "packaged": "figures/2024/MuMu/TrigEffData/TrigEff_Lep2pt.pdf",
+    "reason": "Data trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuMu/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "packaged": "figures/2024/MuMu/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuMu/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "packaged": "figures/2024/MuMu/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "reason": "Simulated trigger numerator and reference-sample distributions (upper panels), with their efficiency ratios (lower panels)"
+  },
+  {
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Lep1pt.pdf",
+    "packaged": "figures/2024/MuMu/Statistical_Uncertainty/UncRatio_Lep1pt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Lep2pt.pdf",
+    "packaged": "figures/2024/MuMu/Statistical_Uncertainty/UncRatio_Lep2pt.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "packaged": "figures/2024/MuMu/Statistical_Uncertainty/UncRatio_Num_Jets.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "packaged": "figures/2024/MuMu/Statistical_Uncertainty/UncRatio_Num_PV.pdf",
+    "reason": "Relative statistical uncertainty diagnostics, retaining the nominal, upward, and downward curves of the supplied production"
+  },
+  {
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "packaged": "figures/2024/MuMu/Uncertainty_Breakdown/Breakdown_Lep1pt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "packaged": "figures/2024/MuMu/Uncertainty_Breakdown/Breakdown_Lep2pt.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/MuMu/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/MuMu/Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Absolute uncertainty component breakdown"
+  },
+  {
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "packaged": "figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "packaged": "figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf",
+    "reason": "Relative uncertainty component breakdown versus event activity"
+  },
+  {
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "packaged": "figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "packaged": "figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf",
+    "reason": "Relative uncertainty component breakdown versus event kinematics"
+  },
+  {
+    "source": "MuMu/ScaleFactor/SF_Num_bJets.pdf",
+    "packaged": "figures/2024/MuMu/ScaleFactor/SF_Num_bJets.pdf",
+    "reason": "Efficiency comparison and scale factor versus heavy-flavour activity"
+  }
+]

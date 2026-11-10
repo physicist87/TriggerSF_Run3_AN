@@ -1,9 +1,83 @@
 \section{Results}\label{sec:results}
-This section will display the \emph{complete} finalized results, not a selected subset: every approved measurement period and each of $ee$, $e\mu$ and $\mu\mu$. Section~\ref{sec:method} introduces the method using representative one-dimensional distributions; all final central values and corresponding statistical, systematic and total uncertainties belong here. Additional diagnostic distributions are in Appendix~\ref{app:diagnostics}. No measured values or maps were included in the supplied source material for the CPV selection, so the following are labelled figure slots.
-\subsection{One-dimensional efficiencies and scale factors}\label{sec:oneD}
-For each period and channel, show efficiencies in data and MC and their ratio versus leading and subleading lepton $p_{\mathrm T}$ and $\eta$. Display denominator yields, binning, uncertainty bars and reference-trigger choice. \insertitem{Full one-dimensional figure set and captions for each period $\times$ channel.}
-\subsection{Two-dimensional central scale factors and uncertainties}\label{sec:twoD}
-For each period, group the $ee$, $e\mu$ and $\mu\mu$ central SF maps with the matching statistical, systematic and total uncertainty maps; mark invalid bins and the exact lookup convention. If a large number of finely divided periods makes the document unwieldy, use a per-period figure followed immediately by its uncertainty figures, preserving the full set in this section rather than moving final maps to the appendix.
-\begin{figure}[htbp]\centering\plotplaceholder{All final $ee$, $e\mu$, $\mu\mu$ SF($p_{\rm T}^{\ell_1},p_{\rm T}^{\ell_2}$) maps, repeated for each approved period.}\caption{Final two-dimensional central trigger scale factors. Replace this slot with the complete set of measured maps and bin definitions.}\label{fig:final-sf}\end{figure}
-\begin{figure}[htbp]\centering\plotplaceholder{Matching per-bin statistical, systematic and total uncertainty maps for every channel and period.}\caption{Final two-dimensional trigger scale-factor uncertainties matching Fig.~\ref{fig:final-sf}. Replace this slot with the complete set of measured maps.}\label{fig:final-unc}\end{figure}
-\insertitem{Optional machine-readable correction file name, version, validity intervals, bin edges and units.}
+The 2024 and 2025 corrections are measured separately. Figures retain the original production binning and annotations.
+\subsection{2024 results}
+\subsubsection{One-dimensional efficiencies and scale factors}
+Figures below compare the data and simulation efficiencies as functions of leading and subleading lepton transverse momentum. The lower panels show their ratios. Error bars and constant-fit overlays are retained from the supplied production plots; their confidence levels and fit configuration have not been independently established. A fitted constant is a diagnostic and does not replace the two-dimensional correction.
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2024: Trigger efficiencies and data-to-simulation scale factors in the $ee$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-ElEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2024: Trigger efficiencies and data-to-simulation scale factors in the $e\mu$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-MuEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2024: Trigger efficiencies and data-to-simulation scale factors in the $\mu\mu$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-MuMu}
+\end{figure}
+\clearpage
+\subsubsection{Two-dimensional correction maps}
+The central and accompanying uncertainty maps are presented for all three channels. White regions in same-flavour maps lie above the ordered-lepton diagonal and are not physical correction bins. The mixed-flavour map has no such ordering restriction. The associated uncertainty image is labelled here as a supplied uncertainty map: whether its entries are absolute or relative and which components it includes must be established from the producing code.
+The displayed values are generally close to unity, with more pronounced departures in some low-transverse-momentum bins. Closely spaced annotations at low momentum overlap, so the machine-readable bin content is required for quantitative use.
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf}
+\caption{2024: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $ee$ channel. The axes are leading and subleading lepton transverse momentum, respectively; only the ordered phase space is populated. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-ElEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/ScaleFactor2D/SF2D_ElPtMuPt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/ScaleFactor2D/SF2DUnc_ElPtMuPt.pdf}
+\caption{2024: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $e\mu$ channel. The horizontal and vertical axes are electron and muon transverse momentum, respectively. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-MuEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf}
+\caption{2024: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $\mu\mu$ channel. The axes are leading and subleading lepton transverse momentum, respectively; only the ordered phase space is populated. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-MuMu}
+\end{figure}
+\clearpage
+\clearpage
+\subsection{2025 results}
+\subsubsection{One-dimensional efficiencies and scale factors}
+Figures below compare the data and simulation efficiencies as functions of leading and subleading lepton transverse momentum. The lower panels show their ratios. Error bars and constant-fit overlays are retained from the supplied production plots; their confidence levels and fit configuration have not been independently established. A fitted constant is a diagnostic and does not replace the two-dimensional correction.
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2025: Trigger efficiencies and data-to-simulation scale factors in the $ee$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-ElEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2025: Trigger efficiencies and data-to-simulation scale factors in the $e\mu$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-MuEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/ScaleFactor/SF_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/ScaleFactor/SF_Lep2pt.pdf}
+\caption{2025: Trigger efficiencies and data-to-simulation scale factors in the $\mu\mu$ channel versus leading (left) and subleading (right) lepton transverse momentum. Upper panels show data and MC; lower panels show their ratio. The plotted errors and fit overlays are those of the supplied result set.}\label{fig:pt-MuMu-2025}
+\end{figure}
+\clearpage
+\subsubsection{Two-dimensional correction maps}
+The central and accompanying uncertainty maps are presented for all three channels. White regions in same-flavour maps lie above the ordered-lepton diagonal and are not physical correction bins. The mixed-flavour map has no such ordering restriction. The associated uncertainty image is labelled here as a supplied uncertainty map: whether its entries are absolute or relative and which components it includes must be established from the producing code.
+The displayed values are generally close to unity, with more pronounced departures in some low-transverse-momentum bins. Closely spaced annotations at low momentum overlap, so the machine-readable bin content is required for quantitative use.
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf}
+\caption{2025: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $ee$ channel. The axes are leading and subleading lepton transverse momentum, respectively; only the ordered phase space is populated. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-ElEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/ScaleFactor2D/SF2D_ElPtMuPt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/ScaleFactor2D/SF2DUnc_ElPtMuPt.pdf}
+\caption{2025: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $e\mu$ channel. The horizontal and vertical axes are electron and muon transverse momentum, respectively. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-MuEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf}
+\caption{2025: Two-dimensional central SF (left) and supplied uncertainty map (right) in the $\mu\mu$ channel. The axes are leading and subleading lepton transverse momentum, respectively; only the ordered phase space is populated. Uncertainty content and lookup boundaries require code verification.}\label{fig:map-MuMu-2025}
+\end{figure}
+\clearpage
+\clearpage
+\subsection{Application conventions}
+
+For a simulated event passing the analysis trigger selection, the intended correction multiplies the non-trigger event weight by the year- and channel-specific SF evaluated at the selected lepton momenta. One must not additionally multiply the event by the measured trigger efficiency when using this data-to-MC ratio prescription. The final deployment must document the validity interval, object selection, trigger OR, bin edges, boundary policy, and nuisance-parameter correlations. No release recommendation is made before these checks are complete.

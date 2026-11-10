@@ -1,21 +1,50 @@
 \section{Uncertainties}\label{sec:unc}
-\subsection{Statistical uncertainty}\label{sec:stat}
-The numerator is a subset of the denominator, so their covariance is included in the efficiency uncertainty. For unweighted data, calculate an appropriate binomial interval (the chosen construction and confidence level must be specified). MC efficiencies are weighted; use a procedure valid for the actual weight distribution, for example a bootstrap that resamples events and recomputes the weighted efficiency and ratio. Propagate the data and MC fluctuations into the SF per bin while retaining numerator--denominator covariance. \todo{Specify the exact interval or resampling algorithm, confidence level, treatment of negative weights and low-statistics bins. Do not claim Clopper--Pearson as the implemented method without checking the code.}
-\subsection{Systematic uncertainties}\label{sec:syst}
-The Run 2 note~\cite{run2} presents breakdowns in jet multiplicity, vertex multiplicity and data-taking-era dependence, and a dedicated appendix on MET--dilepton trigger correlation. The Purdue Run 3 study~\cite{purdue} explicitly evaluates topology dependence with $N_{\mathrm{jet}}$ and $N_{\mathrm{PV}}$ splits by taking the largest binwise departure from the nominal SF; it also examines correlation and luminosity-weighted era dependence. The following definitions are an implementable draft and must be checked against the actual Run 2 prescription and Run 3 analysis code before they are treated as final uncertainty assignments.
-\subsubsection{Event topology and pileup} In each final SF bin, recompute the SF for independently selected low/high $N_{\mathrm{jet}}$ regions and low/high $N_{\mathrm{PV}}$ regions. Use the largest absolute difference from the nominal SF for each source. A data/MC statistical fluctuation treatment, any minimum event count, and the chosen split values must be specified. The Purdue slide uses $N_{\mathrm{jet}}\leq3$ versus $>3$ and $N_{\mathrm{PV}}$ split points 30, 35 and 40 for 2022, 2023 and 2024--2025, respectively; these are study choices, not yet adopted CPV defaults.
-\subsubsection{Data-taking period} Where maps are combined across eras, compare the nominal period-combined SF with the integrated-luminosity-weighted combination of the separate era SFs, bin by bin. Confirm whether this difference is used as a systematic or whether explicit era maps remove the need for that component. Define the luminosity weights only after certification and run boundaries are fixed.
-\subsubsection{Reference--signal trigger correlation}\label{sec:corr}
-The MET-reference method tests whether $R$ and $S_c$ are correlated after the offline selection. In simulated events, form the $2\times2$ contingency table $N_{ab}$ for $a=\mathbf 1_R$ and $b=\mathbf 1_{S_c}$ and report
-\begin{equation}\label{eq:alpha}
-\alpha_c=\frac{P(R\cap S_c\mid O)}{P(R\mid O)P(S_c\mid O)}.
+\subsection{Statistical precision}
+The numerator--denominator covariance must be retained when estimating efficiency errors. For data this requires a binomial construction where applicable; weighted simulation requires a treatment appropriate to its weights, including any negative weights. The supplied statistical and breakdown plots are retained without attributing an unverified interval algorithm to them.
+\subsection{Topology, pileup and era dependence}
+The supplied legends define jet-multiplicity regions $N_{\mathrm{jet}}<3$ and $N_{\mathrm{jet}}\geq3$, and vertex regions $N_{\mathrm{PV}}<40$ and $N_{\mathrm{PV}}\geq40$. These boundaries supersede the different provisional jet split in the original draft. The breakdown legends describe an envelope relative to the nominal SF. The intended interpretation is
+\begin{equation}
+\delta_k(i)=\max_{a\in\{\mathrm{low,high}\}}|\mathrm{SF}_{k,a}(i)-\mathrm{SF}_{\mathrm{nom}}(i)|,
 \end{equation}
-Independent decisions give $\alpha_c=1$. Plot $\alpha_c$ versus leading/subleading lepton kinematics, MET, $N_{\mathrm{jet}}$ and $N_{\mathrm{PV}}$, with its MC uncertainty. Check the exact $\alpha$ definition against the study implementation before comparing values. If a non-negligible residual bias is observed, define and document its propagation to the SF; an $\alpha$ plot alone does not determine an uncertainty.
-\begin{table}[htbp]\centering\small\caption{Draft uncertainty checklist. The actual numerical assignment is pending the implementation and validation.}\label{tab:unc}
-\begin{tabular}{p{0.26\linewidth}p{0.64\linewidth}}\hline Source & Per-bin evaluation \\\hline
-Data/MC statistics & Correlated numerator/denominator statistical procedure applied to efficiency ratio.\\
-Jet multiplicity & Maximum deviation of low/high-$N_{\rm jet}$ SF from nominal.\\
-Vertex multiplicity & Maximum deviation of low/high-$N_{\rm PV}$ SF from nominal.\\
-Era dependence & Deviation from luminosity-weighted era combination, where relevant.\\
-Reference correlation & Bias in conditional efficiency and SF, if supported by correlation study.\\\hline\end{tabular}\end{table}
-When sources are demonstrably independent, combine their variances in quadrature; otherwise retain their correlations or assign a justified conservative envelope. Show statistical, each systematic component, and total uncertainty separately. \todo{Confirm adopted source list and whether correlation bias is an assigned uncertainty or validation only.}
+with relative uncertainty obtained by division by $|\mathrm{SF}_{\mathrm{nom}}(i)|$. This interpretation, including any statistical subtraction, must be checked against the production code. An era-dependence component is also shown; the plot alone does not specify its luminosity weighting or combination procedure.
+\subsection{Reference--signal correlation}\label{sec:corr}
+A useful diagnostic is
+\begin{equation}
+\alpha_c=\frac{P(R\cap S_c\mid O)}{P(R\mid O)P(S_c\mid O)},\qquad P(S_c\mid O,R)=\alpha_c P(S_c\mid O).
+\end{equation}
+Thus the reference-conditioned SF differs from the inclusive SF by $\alpha_d/\alpha_m$. An MC-only correlation study cannot determine this ratio in data without additional assumptions. The supplied orange curves are labelled as a correlation uncertainty, not as measurements of $\alpha$; they must not be relabelled as $\alpha$ distributions.
+\subsection{Uncertainty combination and current limitation}
+The supplied relative-breakdown legend defines total systematic uncertainty using era, jet multiplicity, and vertex multiplicity, and total uncertainty from statistics and that systematic term. Although a correlation curve is shown, it is absent from the stated systematic sum. This discrepancy requires resolution before adopting the total error or the accompanying 2D uncertainty maps. The draft reproduces the figures without changing their numerical content.
+\subsubsection{2024 uncertainty breakdowns}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2024: Relative uncertainty breakdown in the $ee$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-ElEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2024: Relative uncertainty breakdown in the $e\mu$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-MuEl}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2024/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2024: Relative uncertainty breakdown in the $\mu\mu$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-MuMu}
+\end{figure}
+\clearpage
+\subsubsection{2025 uncertainty breakdowns}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2025: Relative uncertainty breakdown in the $ee$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-ElEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2025: Relative uncertainty breakdown in the $e\mu$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-MuEl-2025}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf}
+\includegraphics[width=0.48\linewidth]{figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf}
+\caption{2025: Relative uncertainty breakdown in the $\mu\mu$ channel versus leading and subleading lepton transverse momentum. The displayed total-systematic legend lists era, jet, and vertex components; the separately drawn correlation component is not listed in that sum.}\label{fig:unc-MuMu-2025}
+\end{figure}

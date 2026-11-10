@@ -1,17 +1,51 @@
 \section{Trigger paths}\label{sec:triggers}
-For each final state, the signal-trigger decision is the logical OR of the applicable single-lepton and dilepton paths. Table~\ref{tab:signal} lists the Run 3 paths shown on slides 6--8 of Ref.~\cite{purdue}; every path must be checked against the HLT menu and NanoAOD branches in each period. A recorded event may pass several paths but enters each numerator once. Any run-dependent changes, prescales, dataset-overlap removal, or trigger-object matching requirements must be documented before finalization.
+For each final state, the signal-trigger decision is the logical OR of the applicable single-lepton and dilepton paths. Table~\ref{tab:signal} lists the Run 3 signal paths; every path must be checked against the HLT menu and NanoAOD branches in each period. A recorded event may pass several paths but enters each numerator once. Any run-dependent changes, prescales, dataset-overlap removal, or trigger-object matching requirements must be documented before finalization.
 \begin{table}[htbp]\centering\small
-\caption{Signal-trigger OR as listed in the Purdue Run 3 study. Path suffixes \texttt{\_v*} are suppressed. Confirm per-era availability and signal dataset overlap removal.}\label{tab:signal}
-\begin{tabular}{p{1.2cm}p{0.78\linewidth}}\hline Channel & Signal HLT paths \\\hline
-$ee$ & \path{HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Ele32_WPTight_Gsf}; \path{HLT_DoubleEle25_CaloIdL_MW} \\
-$e\mu$ & \path{HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL}; \path{HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ}; \path{HLT_Ele32_WPTight_Gsf}; \path{HLT_IsoMu24} \\
-$\mu\mu$ & \path{HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8}; \path{HLT_IsoMu24} \\\hline\end{tabular}
+\caption{Signal-trigger OR used for the dilepton trigger measurement. Path suffixes \texttt{\_v*} are suppressed. Confirm per-era availability and signal dataset overlap removal.}\label{tab:signal}
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}p{0.12\linewidth}p{0.83\linewidth}@{}}\hline
+Channel & Signal HLT path \\\hline
+\multirow{3}{*}{$ee$} & {\footnotesize\path{HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL}} \\
+ & {\footnotesize\path{HLT_Ele32_WPTight_Gsf}} \\
+ & {\footnotesize\path{HLT_DoubleEle25_CaloIdL_MW}} \\
+\hline
+\multirow{5}{*}{$e\mu$} & {\footnotesize\path{HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL}} \\
+ & {\footnotesize\path{HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ}} \\
+ & {\footnotesize\path{HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ}} \\
+ & {\footnotesize\path{HLT_Ele32_WPTight_Gsf}} \\
+ & {\footnotesize\path{HLT_IsoMu24}} \\
+\hline
+\multirow{2}{*}{$\mu\mu$} & {\footnotesize\path{HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8}} \\
+ & {\footnotesize\path{HLT_IsoMu24}} \\
+\hline
+\end{tabular}\endgroup
 \end{table}
 \subsection{MET reference triggers}\label{sec:reference}
-Events for the efficiency denominator are recorded with a logical OR of MET or MET+HT reference paths. These triggers select events without directly requiring an electron or muon. The reference set transcribed from slide 9 of Ref.~\cite{purdue} is given in Table~\ref{tab:met}. The unprescaled status and validity interval of each path, and its actual NanoAOD implementation, must be verified. The MET requirement of the reference trigger can bias the measured efficiency if it is correlated with the dilepton trigger; this assumption is examined in Section~\ref{sec:corr}.
+Events for the efficiency denominator are recorded with a logical OR of MET or MET+HT reference paths. These triggers select events without directly requiring an electron or muon. The candidate reference set is given in Table~\ref{tab:met}. The unprescaled status and validity interval of each path, and its actual NanoAOD implementation, must be verified. The MET requirement of the reference trigger can bias the measured efficiency if it is correlated with the dilepton trigger; this assumption is examined in Section~\ref{sec:corr}.
 \begin{table}[htbp]\centering\small
-\caption{Candidate MET-reference paths listed for all 2022--2025 periods in Ref.~\cite{purdue}. Preserve only paths verified in each run and in the input files.}\label{tab:met}
-\begin{tabular}{p{0.94\linewidth}}\hline
-\path{HLT_PFMET120_PFMHT120_IDTight_PFHT60}; \path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60}; \path{HLT_PFHT500_PFMET100_PFMHT100_IDTight}; \path{HLT_PFHT700_PFMET85_PFMHT85_IDTight}; \path{HLT_PFHT800_PFMET75_PFMHT75_IDTight}; \path{HLT_PFMETTypeOne200_BeamHaloCleaned}; \path{HLT_PFMET200_BeamHaloCleaned}; \path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_FilterHF}; \path{HLT_PFHT500_PFMET110_PFMHT110_IDTight} \\\hline\end{tabular}
+\caption{Candidate MET-reference paths. Their availability must be verified separately for each 2025 period. Preserve only paths verified in each run and in the input files.}\label{tab:met}
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}p{0.25\linewidth}p{0.70\linewidth}@{}}\hline
+Reference category & HLT path \\\hline
+\multirow{2}{*}{MET} & {\footnotesize\path{HLT_PFMET120_PFMHT120_IDTight}} \\
+ & {\footnotesize\path{HLT_PFMET200_BeamHaloCleaned}} \\
+\hline
+Type-1 MET & {\footnotesize\path{HLT_PFMETTypeOne200_BeamHaloCleaned}} \\
+\hline
+MET (no muons) & {\footnotesize\path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight}} \\
+\hline
+MET + HT & {\footnotesize\path{HLT_PFMET120_PFMHT120_IDTight_PFHT60}} \\
+\hline
+MET (no muons) + HT & {\footnotesize\path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_PFHT60}} \\
+\hline
+\multirow{4}{*}{HT + MET} & {\footnotesize\path{HLT_PFHT500_PFMET100_PFMHT100_IDTight}} \\
+ & {\footnotesize\path{HLT_PFHT700_PFMET85_PFMHT85_IDTight}} \\
+ & {\footnotesize\path{HLT_PFHT800_PFMET75_PFMHT75_IDTight}} \\
+ & {\footnotesize\path{HLT_PFHT500_PFMET110_PFMHT110_IDTight}} \\
+\hline
+MET (no muons), HF & {\footnotesize\path{HLT_PFMETNoMu120_PFMHTNoMu120_IDTight_FilterHF}} \\
+\hline\end{tabular}
+\endgroup
 \end{table}
-The 2022-only additions displayed on that slide are \path{HLT_PFMETTypeOne120_PFMHT120_IDTight_PFHT60}, \path{HLT_PFMETTypeOne120_PFMHT120_IDTight}, and \path{HLT_PFMETNoMu100_PFMHTNoMu100_IDTight_PFHT60}. \todo{Verify each string, including \texttt{NoMu}, PFHT thresholds and year dependence, against the production code.}

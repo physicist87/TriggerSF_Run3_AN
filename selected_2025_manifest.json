@@ -1,0 +1,567 @@
+[
+  {
+    "year": 2025,
+    "source": "ElEl/Correlation Uncertainty/CorrUnc_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Correlation_Uncertainty/CorrUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Correlation Uncertainty/CorrUnc_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Correlation_Uncertainty/CorrUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Era Uncertainty/EraUnc_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Era_Uncertainty/EraUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Era Uncertainty/EraUnc_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Era_Uncertainty/EraUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Jet Topology Uncertainty/TopoJetUnc_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Jet_Topology_Uncertainty/TopoJetUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Jet Topology Uncertainty/TopoJetUnc_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Jet_Topology_Uncertainty/TopoJetUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/PV Topology Uncertainty/TopoPVUnc_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/PV_Topology_Uncertainty/TopoPVUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/PV Topology Uncertainty/TopoPVUnc_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/PV_Topology_Uncertainty/TopoPVUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/ElEl/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_DiLepMass.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Lep1eta.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Lep1eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Lep2eta.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Lep2eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_METpt.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Num_Jets.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Num_PV.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor/SF_Num_bJets.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor/SF_Num_bJets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf",
+    "package": "figures/2025/ElEl/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Statistical_Uncertainty/UncRatio_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Statistical_Uncertainty/UncRatio_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "package": "figures/2025/ElEl/Statistical_Uncertainty/UncRatio_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "package": "figures/2025/ElEl/Statistical_Uncertainty/UncRatio_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/TrigEffData/TrigEff_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/TrigEffData/TrigEff_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/TrigEffData/TrigEff_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/TrigEffData/TrigEff_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/TrigEffMC/TrigEff_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/TrigEffMC/TrigEff_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "package": "figures/2025/ElEl/Uncertainty_Breakdown/Breakdown_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "package": "figures/2025/ElEl/Uncertainty_Breakdown/Breakdown_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/ElEl/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "ElEl/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/ElEl/Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Correlation Uncertainty/CorrUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/Correlation_Uncertainty/CorrUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Correlation Uncertainty/CorrUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/Correlation_Uncertainty/CorrUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Era Uncertainty/EraUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/Era_Uncertainty/EraUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Era Uncertainty/EraUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/Era_Uncertainty/EraUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Jet Topology Uncertainty/TopoJetUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/Jet_Topology_Uncertainty/TopoJetUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Jet Topology Uncertainty/TopoJetUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/Jet_Topology_Uncertainty/TopoJetUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/PV Topology Uncertainty/TopoPVUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/PV_Topology_Uncertainty/TopoPVUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/PV Topology Uncertainty/TopoPVUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/PV_Topology_Uncertainty/TopoPVUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/MuEl/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_DiLepMass.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_ElPt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_ElPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Lep1eta.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Lep1eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Lep1pt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Lep2eta.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Lep2eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Lep2pt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_METpt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_MuPt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_MuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Num_Jets.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Num_PV.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor/SF_Num_bJets.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor/SF_Num_bJets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor2D/SF2DUnc_ElPtMuPt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor2D/SF2DUnc_ElPtMuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/ScaleFactor2D/SF2D_ElPtMuPt.pdf",
+    "package": "figures/2025/MuEl/ScaleFactor2D/SF2D_ElPtMuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Statistical Uncertainty/UncRatio_ElPt.pdf",
+    "package": "figures/2025/MuEl/Statistical_Uncertainty/UncRatio_ElPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Statistical Uncertainty/UncRatio_MuPt.pdf",
+    "package": "figures/2025/MuEl/Statistical_Uncertainty/UncRatio_MuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "package": "figures/2025/MuEl/Statistical_Uncertainty/UncRatio_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "package": "figures/2025/MuEl/Statistical_Uncertainty/UncRatio_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/TrigEffData/TrigEff_ElPt.pdf",
+    "package": "figures/2025/MuEl/TrigEffData/TrigEff_ElPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/TrigEffData/TrigEff_MuPt.pdf",
+    "package": "figures/2025/MuEl/TrigEffData/TrigEff_MuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/TrigEffMC/TrigEff_ElPt.pdf",
+    "package": "figures/2025/MuEl/TrigEffMC/TrigEff_ElPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/TrigEffMC/TrigEff_MuPt.pdf",
+    "package": "figures/2025/MuEl/TrigEffMC/TrigEff_MuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_ElPt.pdf",
+    "package": "figures/2025/MuEl/Uncertainty_Breakdown/Breakdown_ElPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_MuPt.pdf",
+    "package": "figures/2025/MuEl/Uncertainty_Breakdown/Breakdown_MuPt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/MuEl/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuEl/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/MuEl/Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Correlation Uncertainty/CorrUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Correlation_Uncertainty/CorrUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Correlation Uncertainty/CorrUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Correlation_Uncertainty/CorrUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Era Uncertainty/EraUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Era_Uncertainty/EraUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Era Uncertainty/EraUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Era_Uncertainty/EraUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Jet Topology Uncertainty/TopoJetUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Jet_Topology_Uncertainty/TopoJetUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Jet Topology Uncertainty/TopoJetUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Jet_Topology_Uncertainty/TopoJetUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/PV Topology Uncertainty/TopoPVUnc_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/PV_Topology_Uncertainty/TopoPVUnc_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/PV Topology Uncertainty/TopoPVUnc_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/PV_Topology_Uncertainty/TopoPVUnc_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_DiLepMass.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_METpt.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Relative Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/MuMu/Relative_Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_DiLepMass.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_DiLepMass.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Lep1eta.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Lep1eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Lep2eta.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Lep2eta.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_METpt.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_METpt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Num_Jets.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Num_PV.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor/SF_Num_bJets.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor/SF_Num_bJets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor2D/SF2DUnc_Lep1ptLep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf",
+    "package": "figures/2025/MuMu/ScaleFactor2D/SF2D_Lep1ptLep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Statistical_Uncertainty/UncRatio_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Statistical_Uncertainty/UncRatio_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Num_Jets.pdf",
+    "package": "figures/2025/MuMu/Statistical_Uncertainty/UncRatio_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Statistical Uncertainty/UncRatio_Num_PV.pdf",
+    "package": "figures/2025/MuMu/Statistical_Uncertainty/UncRatio_Num_PV.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/TrigEffData/TrigEff_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/TrigEffData/TrigEff_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/TrigEffData/TrigEff_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/TrigEffData/TrigEff_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/TrigEffMC/TrigEff_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/TrigEffMC/TrigEff_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/TrigEffMC/TrigEff_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/TrigEffMC/TrigEff_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Lep1pt.pdf",
+    "package": "figures/2025/MuMu/Uncertainty_Breakdown/Breakdown_Lep1pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Lep2pt.pdf",
+    "package": "figures/2025/MuMu/Uncertainty_Breakdown/Breakdown_Lep2pt.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Num_Jets.pdf",
+    "package": "figures/2025/MuMu/Uncertainty_Breakdown/Breakdown_Num_Jets.pdf"
+  },
+  {
+    "year": 2025,
+    "source": "MuMu/Uncertainty Breakdown/Breakdown_Num_PV.pdf",
+    "package": "figures/2025/MuMu/Uncertainty_Breakdown/Breakdown_Num_PV.pdf"
+  }
+]

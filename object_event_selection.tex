@@ -1,28 +1,84 @@
 \section{Object and event selection}\label{sec:selection}
-The selection follows the earlier Run 3 trigger-AN draft~\cite{earlier}, adapted to the nominal CPV analysis choices of a medium UParT $b$-tagging working point and a run-dependent Jet Veto Map. The same offline selection is applied to data and simulation where applicable. Table~\ref{tab:sel} summarizes the numerical cuts specified in that draft. Identification working points, year-dependent calibrations and trigger-study input code require a final cross-check before this selection is presented as the implemented measurement.
+The offline selection used for the trigger-efficiency measurement uses the Run 3 configuration described below.
+It is distinct from the final CPV analysis selection used for the final event sample.
+In particular, the trigger study uses a subleading-lepton threshold of 15~GeV and a missing-transverse-momentum threshold of 100~GeV.
+The final CPV analysis requirements of at least two jets, a same-flavour $Z$ veto, and a same-flavour missing-momentum threshold of 40~GeV are not substituted for the trigger-study selection.
+The 2025 extension uses the same object and event selection as the 2024 measurement.
+Year-dependent calibrations and the implemented trigger configuration remain subject to verification against the production code.
+
 \subsection{Electron selection}\label{sec:electron}
-Electrons have $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta|<2.4$. Those in the ECAL barrel--endcap transition region are excluded. The nominal electron identification, isolation, momentum calibration and overlap-removal criteria follow the CPV reconstruction. \todo{Specify the exact ECAL gap, identification and isolation working points, impact-parameter cuts, correction versions and period dependence from the Run 3 code.}
+Electrons satisfy $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta_{\mathrm{SC}}|<2.4$, where $\eta_{\mathrm{SC}}$ is the pseudorapidity of the associated ECAL supercluster.
+Electrons in the barrel--endcap transition region, $1.4442<|\eta_{\mathrm{SC}}|<1.566$, are excluded.
+The tight cut-based electron identification working point is required.
+Electron identification scale factors and the corresponding momentum corrections are applied according to the production configuration.
+\todo{Document the exact identification branch, impact-parameter requirements, and calibration identifiers used in each year.}
+
 \subsection{Muon selection}\label{sec:muon}
-Muons have $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta|<2.4$ and pass the nominal CPV identification and isolation. Momentum corrections and overlap removal are applied consistently to data and simulation. \todo{Specify exact ID, isolation and impact-parameter criteria and correction version.}
-\subsection{Jet selection}\label{sec:jet}
-Jets are clustered with the anti-$k_{\mathrm T}$ algorithm with radius $R=0.4$ from PUPPI-weighted particle-flow candidates. Selected jets satisfy $p_{\mathrm T}>30~\mathrm{GeV}$, $|\eta|<2.4$, the recommended jet ID, and lepton cleaning. Run-dependent JEC and JER treatments are applied. The recommended period-specific Jet Veto Map is applied according to its prescription in data and simulation. \todo{Confirm jet ID, cleaning radius, JEC/JER versions, veto-map identifiers and event-versus-jet veto logic.}
+Muons satisfy $p_{\mathrm T}>15~\mathrm{GeV}$ and $|\eta|<2.4$.
+Global muons passing the recommended tight muon identification are selected, with PF-based relative isolation below 0.15.
+Muon identification and isolation scale factors and the corresponding momentum corrections are applied according to the production configuration.
+\todo{Document the isolation cone and branch, impact-parameter requirements, and calibration identifiers used in each year.}
+
+\subsection{Jet selection and veto map}\label{sec:jet}
+Jets are clustered with the anti-$k_{\mathrm T}$ algorithm with radius $R=0.4$ from PUPPI-weighted particle-flow candidates.
+Selected analysis jets satisfy $p_{\mathrm T}>30~\mathrm{GeV}$, $|\eta|<2.4$, and the tight lepton-veto jet identification.
+Jets within $\Delta R<0.4$ of a selected lepton are removed.
+Jet energy corrections and jet energy resolution corrections follow the period-dependent production configuration.
+
+The Jet Veto Map is applied as an event veto.
+Its jet eligibility threshold is $p_{\mathrm T}>15~\mathrm{GeV}$, with tight lepton-veto jet identification and the recommended charged and neutral electromagnetic-fraction requirements.
+This threshold is separate from the 30~GeV threshold used to select analysis jets.
+An event is rejected if an eligible jet falls in a vetoed region.
+\todo{Document the map identifiers, exact electromagnetic-fraction requirements, and period-dependent application from code.}
+
 \subsection{$b$ jet identification}\label{sec:btag}
-At least one selected jet must pass the \emph{medium} Unified Particle Transformer (UParT) $b$-tagging working point. This is distinct from alternative medium \emph{object selections} in Appendix~\ref{app:alternatives}. \todo{Insert per-period UParT branch and thresholds, calibration, and availability in each NanoAOD campaign.}
+At least one selected jet must pass the medium Unified Particle Transformer (UParT) $b$-tagging working point.
+\todo{Insert the exact discriminator branch, working-point thresholds, efficiency inputs, and scale-factor calibration used in each period.}
+
 \subsection{Missing transverse momentum}\label{sec:met}
-PUPPI missing transverse momentum is used. The earlier Run 3 draft~\cite{earlier} imposes $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$, on both efficiency numerator and denominator. The recommended event filters and propagated object corrections are applied. \todo{Confirm the 100~GeV cut, PUPPI MET branch, filter list, and consistency with the final CPV selection and reference-trigger plateau.}
-\subsection{Event selection}\label{sec:events}
-Events contain at least two oppositely charged selected leptons in an exclusive $ee$, $e\mu$, or $\mu\mu$ channel. The leading and subleading leptons satisfy $p_{\mathrm T}>25$ and $15~\mathrm{GeV}$, respectively, and $m_{\ell\ell}>20~\mathrm{GeV}$. At least one selected jet passes medium UParT, and $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$ is required. Recommended quality filters and the Jet Veto Map are applied. The earlier draft does not establish an exact-two-lepton veto, a minimum total jet multiplicity, or a same-flavour $Z$ veto; add these only if implemented in the Run 3 trigger study.
+PUPPI missing transverse momentum is used, with $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$ required in all three channels.
+The same offline requirement is imposed on the efficiency numerator and denominator.
+Jet energy scale and resolution corrections are propagated to the missing transverse momentum.
+
+\subsection{Event selection and corrections}\label{sec:events}
+Events contain at least two oppositely charged selected leptons in the $ee$, $e\mu$, or $\mu\mu$ channel.
+The leading and subleading leptons satisfy $p_{\mathrm T}>25$ and $15~\mathrm{GeV}$, respectively, and the dilepton invariant mass satisfies $m_{\ell\ell}>20~\mathrm{GeV}$.
+At least one selected jet passes the medium UParT working point, and $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$ is required.
+The documented trigger-study selection does not specify an additional minimum of two jets or a same-flavour $Z$-mass veto.
+An exact-two-lepton requirement is likewise not inferred from the stated requirement of at least two leptons.
+
+The event-quality flags documented for the study are listed in Table~\ref{tab:filters}.
+For the 2024 simulation, the pileup reweighting was updated to match the C--I data-taking periods rather than B--I.
+Lepton identification and isolation scale factors and the object corrections are applied consistently with the measurement configuration.
+The measured trigger scale factor is not applied when deriving the simulated trigger efficiency itself.
+The same non-trigger MC weights are used in the efficiency numerator and denominator.
+
 \begin{table}[htbp]\centering\small
-\caption{Draft nominal offline selection from the earlier trigger AN~\cite{earlier} and the agreed UParT-medium and Jet Veto Map choices. Exact working points require code verification.}\label{tab:sel}
-\begin{tabular}{p{0.32\linewidth}p{0.58\linewidth}}\hline
+\caption{Offline selection for the trigger-efficiency measurement, with the medium UParT working point.}\label{tab:sel}
+\begin{tabular}{p{0.30\linewidth}p{0.61\linewidth}}\hline
 Object or quantity & Requirement \\\hline
-Electrons & $p_{\mathrm T}>15~\mathrm{GeV}$, $|\eta|<2.4$; ECAL transition veto; CPV ID and isolation.\\
-Muons & $p_{\mathrm T}>15~\mathrm{GeV}$, $|\eta|<2.4$; CPV ID and isolation.\\
-AK4 PUPPI jets & $p_{\mathrm T}>30~\mathrm{GeV}$, $|\eta|<2.4$; jet ID and lepton cleaning.\\
-Jet Veto Map & Recommended period-specific map applied.\\
-Dilepton topology & $\geq2$ opposite-charge leptons in $ee$, $e\mu$, $\mu\mu$; leading (subleading) $p_{\mathrm T}>25$ ($15$) GeV; $m_{\ell\ell}>20~\mathrm{GeV}$.\\
-$b$-tagged jets & $\geq1$ selected jet at UParT medium working point.\\
-PUPPI missing momentum & $p_{\mathrm T}^{\mathrm{miss}}>100~\mathrm{GeV}$.\\
-Event quality & Period-specific filters and certified data lumisections.\\\hline
+Electrons & $p_{\mathrm T}>15$~GeV, $|\eta_{\mathrm{SC}}|<2.4$; exclude $1.4442<|\eta_{\mathrm{SC}}|<1.566$; tight cut-based ID.\\
+Muons & $p_{\mathrm T}>15$~GeV, $|\eta|<2.4$; global muon, tight ID; PF relative isolation $<0.15$.\\
+Analysis jets & AK4 PUPPI; $p_{\mathrm T}>30$~GeV, $|\eta|<2.4$; tight lepton-veto ID; $\Delta R(j,\ell)\geq0.4$.\\
+Jet Veto Map & Event veto using eligible jets with $p_{\mathrm T}>15$~GeV and the map-specific quality requirements.\\
+Dilepton topology & $\geq2$ opposite-charge leptons; leading/subleading $p_{\mathrm T}>25/15$~GeV; $m_{\ell\ell}>20$~GeV.\\
+$b$-tagged jets & $\geq1$ selected jet at the medium UParT working point.\\
+PUPPI missing momentum & $p_{\mathrm T}^{\mathrm{miss}}>100$~GeV in all channels.\\
+Event quality & Certified data lumisections and the event-quality filters in Table~\ref{tab:filters}.\\\hline
 \end{tabular}\end{table}
-For the efficiency measurement, the MET-reference trigger is imposed on numerator and denominator; the signal trigger is imposed only on the numerator. \todo{Check the table against final code and document year- or channel-dependent deviations.}
+
+\begin{table}[htbp]\centering\small
+\caption{Event-quality filters for the 2024 measurement. The ECAL bad-calibration flag is included for 2024; the 2025 filter configuration must be checked separately.}\label{tab:filters}
+\begin{tabular}{ll}\hline
+Filter & NanoAOD flag \\\hline
+Primary vertex & \path{Flag_goodVertices}\\
+Beam halo & \path{Flag_globalSuperTightHalo2016Filter}\\
+ECAL trigger primitive & \path{Flag_EcalDeadCellTriggerPrimitiveFilter}\\
+Bad PF muon & \path{Flag_BadPFMuonFilter}\\
+Bad PF muon longitudinal displacement & \path{Flag_BadPFMuonDzFilter}\\
+HF noisy hits & \path{Flag_hfNoisyHitsFilter}\\
+Bad ECAL supercluster & \path{Flag_eeBadScFilter}\\
+ECAL bad calibration (2024) & \path{Flag_ecalBadCalibFilter}\\\hline
+\end{tabular}\end{table}
+
+For the efficiency measurement, the MET-reference trigger OR is imposed on both numerator and denominator, whereas the signal-trigger OR is imposed only on the numerator.
